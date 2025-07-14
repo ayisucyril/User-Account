@@ -35,7 +35,7 @@ require_once("config.php");
                   <label for="firstname">Password</label>
                   <input class="form-control" type="password" name = "password" placeholder = "Enter your password" required>
                   <hr class="mb-3">
-                  <input class = "btn btn-primary" type="submit" name="create" value = "SIGN UP">
+                  <input class = "btn btn-primary" type="submit" id ="register" name="create" value = "SIGN UP">
         </div>
         </div>
         
@@ -43,7 +43,22 @@ require_once("config.php");
       </div>
      </form>
   </div>
-  
+ |<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script>
+  $(function(){
+
+    $(`#register`).click(function(){
+        
+      });
+        Swal.fire({
+          
+          'title' : 'hello world',
+          'text': 'This is from Sweet alert2', 
+          'type': 'success'
+        })
+  });
+ </script>
 </body>
 </html>
 <?php
